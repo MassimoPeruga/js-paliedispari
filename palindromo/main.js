@@ -4,7 +4,7 @@
 let parolaUtente;
 do {
     parolaUtente = prompt("Inserisci una parola:");
-} while (!parolaUtente || !isParolaValida(parolaUtente));
+} while (!parolaUtente || parolaUtente.length < 2 || !isParolaValida(parolaUtente));
 
 // Funzione per verificare se una parola è composta solo da lettere
 function isParolaValida(parola) {
